@@ -40,7 +40,7 @@ const RESPONSIBLE_PILLARS = [
 
 export const ResponsibleAI: React.FC = () => {
   return (
-    <section className="py-24 bg-ornix-navy-950 text-white relative overflow-hidden border-t border-b border-white/10">
+    <section className="py-24 bg-ornix-navy-850 text-white relative overflow-hidden border-t border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading
           badge="ETHICAL GOVERNANCE"

@@ -26,7 +26,7 @@ export default function SolutionsPage() {
   return (
     <div className="pt-28 pb-20 bg-ornix-navy-900 text-white min-h-screen">
       {/* Header Banner */}
-      <section className="py-16 bg-ornix-navy-950 border-b border-white/10 grid-background text-center relative overflow-hidden">
+      <section className="py-16 bg-ornix-navy-850 border-b border-white/10 grid-background text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ornix-yellow/20 border border-ornix-yellow/40 text-ornix-yellow text-xs font-semibold uppercase tracking-wider mb-4">
             INTELLIGENT HEALTHCARE CAPABILITIES
@@ -82,7 +82,7 @@ export default function SolutionsPage() {
                   </div>
                 </div>
 
-                <div className="lg:col-span-4 bg-ornix-navy-950 p-6 rounded-2xl border border-white/10 flex flex-col justify-between h-full">
+                <div className="lg:col-span-4 bg-ornix-navy-850 p-6 rounded-2xl border border-white/10 flex flex-col justify-between h-full">
                   <div>
                     <h4 className="text-xs font-mono uppercase tracking-wider text-ornix-yellow mb-2">
                       Primary Impact

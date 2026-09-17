@@ -29,7 +29,7 @@ export const ResearchFlowMap: React.FC = () => {
               <span className="text-xs font-mono opacity-80 block mb-1">0{step.step}</span>
               <span className="text-sm font-heading font-bold block">{step.label}</span>
               {isActive && (
-                <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-ornix-navy-950 animate-ping" />
+                <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-ornix-navy-850 animate-ping" />
               )}
             </button>
           );

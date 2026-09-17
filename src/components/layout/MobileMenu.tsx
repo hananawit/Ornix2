@@ -23,7 +23,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, current
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: "-100%" }}
           transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-0 z-40 bg-ornix-navy-950/98 backdrop-blur-2xl flex flex-col justify-between px-6 pt-24 pb-8 md:hidden"
+          className="fixed inset-0 z-40 bg-ornix-navy-850/98 backdrop-blur-2xl flex flex-col justify-between px-6 pt-24 pb-8 md:hidden"
         >
           <div className="flex flex-col gap-3">
             {NAV_LINKS.map((link, idx) => {
@@ -70,7 +70,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, current
 
             <div className="flex items-center justify-between text-xs text-ornix-slate-400 font-mono pt-2">
               <span>ORNIX AI + HEALTHCARE</span>
-              <span>© {new Date().getFullYear()}</span>
+              <span>Â© {new Date().getFullYear()}</span>
             </div>
           </motion.div>
         </motion.div>

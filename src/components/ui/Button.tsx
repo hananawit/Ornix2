@@ -5,12 +5,14 @@ import Link from "next/link";
 import { motion, HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps
+  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "onClick"> {
   variant?: "primary" | "accent" | "glass" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
   href?: string;
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
+  onClick?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -49,18 +51,43 @@ export const Button: React.FC<ButtonProps> = ({
 
   const content = (
     <>
-      {icon && iconPosition === "left" && <span className="transition-transform duration-300 group-hover:-translate-x-1 shrink-0">{icon}</span>}
+      {icon && iconPosition === "left" && (
+        <span className="transition-transform duration-300 group-hover:-translate-x-1 shrink-0">
+          {icon}
+        </span>
+      )}
+
       <span className="shrink-0">{children}</span>
-      {icon && iconPosition === "right" && <span className="transition-transform duration-300 group-hover:translate-x-1 shrink-0">{icon}</span>}
+
+      {icon && iconPosition === "right" && (
+        <span className="transition-transform duration-300 group-hover:translate-x-1 shrink-0">
+          {icon}
+        </span>
+      )}
     </>
   );
 
-  const combinedClasses = cn(baseStyles, variants[variant], sizes[size], "group", className);
+  const combinedClasses = cn(
+    baseStyles,
+    variants[variant],
+    sizes[size],
+    "group",
+    className
+  );
 
   if (href) {
     return (
-      <motion.div whileTap={{ scale: 0.97 }} className="inline-block relative z-20">
-        <Link href={href} onClick={onClick} className={combinedClasses}>
+      <motion.div
+        whileTap={{ scale: 0.97 }}
+        className="inline-block relative z-20"
+      >
+        <Link
+          href={href}
+          onClick={
+            onClick as React.MouseEventHandler<HTMLAnchorElement>
+          }
+          className={combinedClasses}
+        >
           {content}
         </Link>
       </motion.div>
@@ -72,7 +99,9 @@ export const Button: React.FC<ButtonProps> = ({
       whileTap={{ scale: 0.97 }}
       className={combinedClasses}
       disabled={disabled}
-      onClick={onClick}
+      onClick={
+        onClick as React.MouseEventHandler<HTMLButtonElement>
+      }
       {...(props as HTMLMotionProps<"button">)}
     >
       {content}

@@ -95,7 +95,7 @@ export const CaseStudiesSection: React.FC = () => {
               </div>
 
               {/* Technology & Key Metrics Sidebar */}
-              <div className="lg:col-span-4 bg-ornix-navy-950 text-white rounded-2xl p-6 flex flex-col justify-between">
+              <div className="lg:col-span-4 bg-ornix-navy-850 text-white rounded-2xl p-6 flex flex-col justify-between">
                 <div>
                   <h4 className="text-xs font-mono uppercase tracking-widest text-ornix-yellow mb-4">
                     Technology Deployed

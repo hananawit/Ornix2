@@ -81,7 +81,7 @@ export default function ResourcesPage() {
   return (
     <div className="pt-28 pb-20 bg-ornix-navy-900 text-white min-h-screen">
       {/* Banner */}
-      <section className="py-16 bg-ornix-navy-950 border-b border-white/10 grid-background text-center relative overflow-hidden">
+      <section className="py-16 bg-ornix-navy-850 border-b border-white/10 grid-background text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ornix-yellow/20 border border-ornix-yellow/40 text-ornix-yellow text-xs font-semibold uppercase tracking-wider mb-4">
             ORNIX INSIGHTS & THOUGHT LEADERSHIP

@@ -23,7 +23,7 @@ export default function ProductsPage() {
   return (
     <div className="pt-28 pb-20 bg-ornix-navy-900 text-white min-h-screen">
       {/* Banner */}
-      <section className="py-16 bg-ornix-navy-950 border-b border-white/10 grid-background text-center relative overflow-hidden">
+      <section className="py-16 bg-ornix-navy-850 border-b border-white/10 grid-background text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ornix-yellow/20 border border-ornix-yellow/40 text-ornix-yellow text-xs font-semibold uppercase tracking-wider mb-4">
             MODULAR PLATFORM ARCHITECTURE
@@ -70,7 +70,7 @@ export default function ProductsPage() {
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     {product.keyFeatures.map((feat, idx) => (
-                      <div key={idx} className="bg-ornix-navy-950 p-4 rounded-xl border border-white/5">
+                      <div key={idx} className="bg-ornix-navy-850 p-4 rounded-xl border border-white/5">
                         <h5 className="text-sm font-bold text-white mb-1 font-heading">{feat.title}</h5>
                         <p className="text-xs text-ornix-slate-400 leading-relaxed">{feat.desc}</p>
                       </div>
@@ -79,7 +79,7 @@ export default function ProductsPage() {
                 </div>
               </div>
 
-              <div className="lg:col-span-4 bg-ornix-navy-950 p-6 rounded-2xl border border-white/10 flex flex-col justify-between h-full">
+              <div className="lg:col-span-4 bg-ornix-navy-850 p-6 rounded-2xl border border-white/10 flex flex-col justify-between h-full">
                 <div>
                   <div className="mb-4">
                     <span className="text-xs font-mono text-ornix-slate-400 block mb-1">TARGET AUDIENCE</span>
