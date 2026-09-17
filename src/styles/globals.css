@@ -3,16 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --ornix-primary: #0A1128;
-  --ornix-primary-dark: #060A18;
-  --ornix-primary-light: #142047;
+  /* Brighter navy palette - shifted from near-black to rich midnight blue */
+  --ornix-primary: #162040;
+  --ornix-primary-dark: #0E1830;
+  --ornix-primary-light: #1E2E58;
   --ornix-accent: #F5B700;
   --ornix-accent-hover: #E0A700;
-  --ornix-background: #0A1128;
-  --ornix-surface: #0F1836;
+  --ornix-background: #111D3D;
+  --ornix-surface: #172242;
   --ornix-text: #F8FAFC;
-  --ornix-muted: #94A3B8;
-  --ornix-border: rgba(255, 255, 255, 0.08);
+  --ornix-muted: #9FB3CC;
+  --ornix-border: rgba(255, 255, 255, 0.10);
 
   /* Light section overrides */
   --ornix-light-bg: #FFFFFF;
@@ -44,10 +45,10 @@
 
 /* Custom Utilities */
 .glass-panel {
-  background: rgba(15, 24, 54, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(30, 46, 88, 0.65);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .glass-panel-light {
@@ -58,7 +59,7 @@
 }
 
 .glow-yellow {
-  box-shadow: 0 0 35px -5px rgba(245, 183, 0, 0.25);
+  box-shadow: 0 0 35px -5px rgba(245, 183, 0, 0.30);
 }
 
 .text-gradient-accent {
@@ -68,14 +69,15 @@
 }
 
 .text-gradient-navy {
-  background: linear-gradient(135deg, #0A1128 0%, #1E293B 100%);
+  background: linear-gradient(135deg, #162040 0%, #1E293B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* Brighter subtle grid lines */
 .grid-background {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -84,10 +86,10 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #060A18;
+  background: #0E1830;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1B2B5E;
+  background: #2A3E72;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {

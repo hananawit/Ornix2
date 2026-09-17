@@ -48,7 +48,7 @@ export default function ContactPage() {
   return (
     <div className="pt-28 pb-20 bg-ornix-navy-900 text-white min-h-screen">
       {/* Banner */}
-      <section className="py-16 bg-ornix-navy-950 border-b border-white/10 grid-background text-center relative overflow-hidden">
+      <section className="py-16 bg-ornix-navy-850 border-b border-white/10 grid-background text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ornix-yellow/20 border border-ornix-yellow/40 text-ornix-yellow text-xs font-semibold uppercase tracking-wider mb-4">
             TALK TO ORNIX
@@ -108,7 +108,7 @@ export default function ContactPage() {
                       placeholder="Dr. Jane Doe"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-ornix-navy-950 border border-white/10 text-white placeholder-ornix-slate-500 text-sm focus:outline-none focus:border-ornix-yellow"
+                      className="w-full px-4 py-3 rounded-xl bg-ornix-navy-850 border border-white/10 text-white placeholder-ornix-slate-500 text-sm focus:outline-none focus:border-ornix-yellow"
                     />
                   </div>
 
@@ -122,7 +122,7 @@ export default function ContactPage() {
                       placeholder="Health System / Hospital / Institution"
                       value={formData.organization}
                       onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-ornix-navy-950 border border-white/10 text-white placeholder-ornix-slate-500 text-sm focus:outline-none focus:border-ornix-yellow"
+                      className="w-full px-4 py-3 rounded-xl bg-ornix-navy-850 border border-white/10 text-white placeholder-ornix-slate-500 text-sm focus:outline-none focus:border-ornix-yellow"
                     />
                   </div>
                 </div>
@@ -138,7 +138,7 @@ export default function ContactPage() {
                       placeholder="jane.doe@hospital.org"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-ornix-navy-950 border border-white/10 text-white placeholder-ornix-slate-500 text-sm focus:outline-none focus:border-ornix-yellow"
+                      className="w-full px-4 py-3 rounded-xl bg-ornix-navy-850 border border-white/10 text-white placeholder-ornix-slate-500 text-sm focus:outline-none focus:border-ornix-yellow"
                     />
                   </div>
 
@@ -151,7 +151,7 @@ export default function ContactPage() {
                       placeholder="+1 (555) 000-0000"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-ornix-navy-950 border border-white/10 text-white placeholder-ornix-slate-500 text-sm focus:outline-none focus:border-ornix-yellow"
+                      className="w-full px-4 py-3 rounded-xl bg-ornix-navy-850 border border-white/10 text-white placeholder-ornix-slate-500 text-sm focus:outline-none focus:border-ornix-yellow"
                     />
                   </div>
                 </div>
@@ -168,7 +168,7 @@ export default function ContactPage() {
                         areaOfInterest: e.target.value as ContactFormData["areaOfInterest"],
                       })
                     }
-                    className="w-full px-4 py-3 rounded-xl bg-ornix-navy-950 border border-white/10 text-white text-sm focus:outline-none focus:border-ornix-yellow"
+                    className="w-full px-4 py-3 rounded-xl bg-ornix-navy-850 border border-white/10 text-white text-sm focus:outline-none focus:border-ornix-yellow"
                   >
                     <option value="AI Solutions">AI Solutions</option>
                     <option value="Healthcare Solutions">Healthcare Solutions</option>
@@ -189,7 +189,7 @@ export default function ContactPage() {
                     placeholder="Describe your organization's AI initiatives or technical requirements..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-ornix-navy-950 border border-white/10 text-white placeholder-ornix-slate-500 text-sm focus:outline-none focus:border-ornix-yellow resize-none"
+                    className="w-full px-4 py-3 rounded-xl bg-ornix-navy-850 border border-white/10 text-white placeholder-ornix-slate-500 text-sm focus:outline-none focus:border-ornix-yellow resize-none"
                   />
                 </div>
 

@@ -12,17 +12,17 @@ const config: Config = {
       colors: {
         ornix: {
           navy: {
-            950: "#060A18",
-            900: "#0A1128", // Deep primary navy
-            850: "#0F1836",
-            800: "#142047",
-            700: "#1B2B5E",
-            600: "#243777",
-            100: "#E6EAFA",
-            50: "#F2F5FD",
+            950: "#0A1226",
+            900: "#111D3D",   // Brighter: was #0A1128
+            850: "#1A2748",   // section background — brighter than old navy-950
+            800: "#1E2E58",   // Brighter: was #142047
+            700: "#253870",   // Brighter: was #1B2B5E
+            600: "#2E4688",   // Brighter: was #243777
+            100: "#D0DAEF",
+            50:  "#EBF0FA",
           },
           yellow: {
-            DEFAULT: "#F5B700", // Warm logo golden accent
+            DEFAULT: "#F5B700",
             hover: "#E0A700",
             light: "#FFF6D6",
             glow: "rgba(245, 183, 0, 0.25)",
@@ -44,7 +44,7 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-pattern': 'radial-gradient(circle at 50% 30%, rgba(20, 32, 71, 0.8) 0%, rgba(10, 17, 40, 1) 100%)',
+        'hero-pattern': 'radial-gradient(circle at 50% 30%, rgba(37, 56, 112, 0.7) 0%, rgba(17, 29, 61, 1) 100%)',
         'glow-accent': 'radial-gradient(circle at 50% 50%, rgba(245, 183, 0, 0.15) 0%, transparent 70%)',
       },
       animation: {

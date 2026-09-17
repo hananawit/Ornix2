@@ -8,7 +8,7 @@ import { ArrowUpRight, Linkedin, Twitter, Youtube, Shield, CheckCircle } from "l
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-ornix-navy-950 text-ornix-slate-300 border-t border-white/10 pt-16 pb-12 relative overflow-hidden">
+    <footer className="bg-ornix-navy-850 text-ornix-slate-300 border-t border-white/10 pt-16 pb-12 relative overflow-hidden">
       {/* Background radial glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-ornix-yellow/5 blur-[120px] pointer-events-none rounded-full" />
 
@@ -122,7 +122,7 @@ export const Footer: React.FC = () => {
 
         {/* Footer Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ornix-slate-400">
-          <p>© {new Date().getFullYear()} ORNIX Inc. All rights reserved.</p>
+          <p>Â© {new Date().getFullYear()} ORNIX Inc. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-ornix-yellow transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-ornix-yellow transition-colors">Terms of Service</Link>

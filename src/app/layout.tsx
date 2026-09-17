@@ -88,7 +88,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen bg-ornix-navy-900 text-white flex flex-col selection:bg-ornix-yellow selection:text-ornix-navy-950">
+      <body className="min-h-screen bg-ornix-navy-900 text-white flex flex-col selection:bg-ornix-yellow selection:text-ornix-navy-950" style={{ background: 'linear-gradient(165deg, #1a2850 0%, #111D3D 40%, #0e1830 100%)' }}>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
