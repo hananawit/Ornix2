@@ -11,7 +11,7 @@ export const SITE_URL = "https://ornix.health";
 export const NAV_LINKS = [
   { name: "Home", href: "/" },
   { name: "Solutions", href: "/solutions" },
-  { name: "Research", href: "/research" },
+  // { name: "Research", href: "/research" },
   { name: "Products", href: "/products" },
   { name: "About", href: "/about" },
   { name: "Resources", href: "/resources" },

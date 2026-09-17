@@ -134,8 +134,7 @@ export const HeroVisualization: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[400px] md:h-[520px] rounded-3xl glass-panel p-6 flex items-center justify-center overflow-hidden border border-white/10 shadow-2xl">
-      {/* Background radial highlight */}
+<div className="relative w-full aspect-[16/10] rounded-3xl glass-panel p-6 flex items-center justify-center overflow-hidden border border-white/10 shadow-2xl">      {/* Background radial highlight */}
       <div className="absolute inset-0 bg-gradient-radial from-ornix-yellow/10 via-transparent to-transparent pointer-events-none" />
 
       {/* Interactive canvas */}
@@ -150,8 +149,9 @@ export const HeroVisualization: React.FC = () => {
       >
         <div className="w-3 h-3 rounded-full bg-ornix-yellow animate-ping" />
         <div>
-          <p className="text-xs text-ornix-slate-400 font-mono">LIVE TELEMETRY STREAM</p>
-          <p className="text-sm font-semibold text-white">10k+ Signals / Sec</p>
+<p className="text-xs text-ornix-slate-400 font-mono">AI CO-INNOVATION</p>
+<p className="text-sm font-semibold text-white">Built for Ethiopia</p>
+
         </div>
       </motion.div>
 
@@ -165,8 +165,8 @@ export const HeroVisualization: React.FC = () => {
           AI
         </div>
         <div>
-          <p className="text-xs text-ornix-slate-400 font-mono">MODEL ACCURACY</p>
-          <p className="text-sm font-semibold text-white">Clinical Grade</p>
+<p className="text-xs text-ornix-slate-400 font-mono">AI APPROACH</p>
+<p className="text-sm font-semibold text-white">Sovereign & Local</p>
         </div>
       </motion.div>
 

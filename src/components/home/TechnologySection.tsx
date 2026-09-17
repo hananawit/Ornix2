@@ -34,12 +34,12 @@ export const TechnologySection: React.FC = () => {
   return (
     <section className="py-24 bg-ornix-navy-900 text-white relative overflow-hidden grid-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeading
-          badge="TECH STACK & INFRASTRUCTURE"
-          title="The Technology Behind ORNIX"
-          highlightText="Technology Behind ORNIX"
-          subtitle="Explore the underlying machine learning models, data engineering pipelines, and cloud security frameworks driving the platform."
-        />
+<SectionHeading
+  badge="TECHNICAL FOUNDATION"
+  title="The Infrastructure Behind Intelligent Solutions"
+  highlightText="Intelligent Solutions"
+  subtitle="Ornix combines AI models, data engineering, secure infrastructure, cloud and on-premise deployment, and scalable software architecture to build reliable intelligence around institutional needs."
+/>
 
         {/* Category Tabs */}
         <div className="flex items-center justify-center gap-2 overflow-x-auto pb-4 mb-10 no-scrollbar">

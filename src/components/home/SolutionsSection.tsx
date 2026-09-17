@@ -19,7 +19,6 @@ import { AI_SOLUTIONS } from "@/data/solutions";
 import { StaggerChildren, SlideUp } from "@/components/ui/FadeIn";
 
 const ICON_MAP: Record<string, React.ReactNode> = {
-  Stethoscope: <Stethoscope className="w-6 h-6 text-ornix-yellow" />,
   Database: <Database className="w-6 h-6 text-ornix-yellow" />,
   Bot: <Bot className="w-6 h-6 text-ornix-yellow" />,
   TrendingUp: <TrendingUp className="w-6 h-6 text-ornix-yellow" />,
@@ -35,12 +34,12 @@ export const SolutionsSection: React.FC = () => {
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-ornix-navy-700/40 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeading
-          badge="Specialized AI Solutions"
-          title="AI Built for Real Healthcare"
-          highlightText="Healthcare"
-          subtitle="Designed specifically for complex medical environments, our AI solutions convert raw telemetry, patient records, and diagnostics into actionable clinical clarity."
-        />
+<SectionHeading
+  badge="ORNIX AI CAPABILITIES"
+  title="Mastering the Full Spectrum of AI"
+  highlightText="Complex Challenges"
+  subtitle="From predictive intelligence and deep learning to language, vision, automation, and adaptive cognitive systems, Ornix brings together the full spectrum of artificial intelligence to solve complex sector challenges."
+/>
 
         <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {AI_SOLUTIONS.map((solution) => (
@@ -67,7 +66,7 @@ export const SolutionsSection: React.FC = () => {
                   </div>
 
                   <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-semibold text-ornix-yellow group-hover:translate-x-1 transition-transform">
-                    <span>Explore Capabilities</span>
+                    <span>Explore Our Approach</span>
                     <ArrowRight className="w-4 h-4" />
                   </div>
                 </AnimatedCard>

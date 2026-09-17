@@ -15,12 +15,12 @@ export const CaseStudiesSection: React.FC = () => {
   return (
     <section className="py-24 bg-ornix-slate-50 text-ornix-slate-900 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeading
-          theme="light"
-          badge="CASE STUDY ARCHITECTURE"
-          title="Clinical Implementation Architecture"
-          subtitle="Explore how ORNIX technology frameworks address real-world health system challenges using configurable placeholder case studies."
-        />
+<SectionHeading
+  theme="light"
+  badge="THE ORNIX CO-INNOVATION JOURNEY"
+  title="From Complex Challenges to Intelligent Solutions"
+  subtitle="Ornix works alongside institutions to understand complex challenges, co-engineer locally grounded AI, deploy sovereign technology, and continuously evolve intelligence as organizational needs change."
+/>
 
         {/* Case Selector Tabs */}
         <div className="flex items-center gap-3 overflow-x-auto pb-4 mb-8 no-scrollbar">

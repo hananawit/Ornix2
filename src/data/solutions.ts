@@ -16,113 +16,126 @@ export interface SectorItem {
   iconName: string;
   keyUseCases: string[];
 }
-
 export const AI_SOLUTIONS: SolutionItem[] = [
   {
-    id: "clinical-intelligence",
-    title: "Clinical Intelligence",
-    shortDesc: "Transforming complex patient telemetry and clinical records into real-time actionable insights for care providers.",
-    fullDesc: "ORNIX Clinical Intelligence analyzes unstructured electronic health records (EHR), physiological signals, and clinical notes in real time, delivering diagnostic assistance and treatment recommendations to clinical staff without disrupting workflow.",
-    iconName: "Stethoscope",
-    capabilities: [
-      "Real-time diagnostic assistance",
-      "EHR narrative synthesis",
-      "Clinical guideline cross-referencing",
-      "Symptom progression modeling"
-    ],
-    impactMetric: "Accelerated decision-making efficiency",
-    category: "clinical"
-  },
-  {
-    id: "medical-data-intelligence",
-    title: "Medical Data Intelligence",
-    shortDesc: "Harmonizing fragmented health data across legacy EHRs, FHIR endpoints, and multi-modal diagnostic databases.",
-    fullDesc: "Our proprietary data normalization pipeline converts disparate medical data formats into unified FHIR-compliant knowledge graphs, enabling seamless interoperability and longitudinal analytics.",
-    iconName: "Database",
-    capabilities: [
-      "Multi-modal FHIR data synthesis",
-      "Semantic medical entity recognition",
-      "Cross-institution data federation",
-      "Automated de-identification & anonymization"
-    ],
-    impactMetric: "Seamless data interoperability",
-    category: "data"
-  },
-  {
-    id: "intelligent-assistants",
-    title: "Intelligent Assistants",
-    shortDesc: "Empowering physicians and healthcare staff with specialized AI co-pilots for documentation and triage.",
-    fullDesc: "Built on HIPAA-aligned foundation models, ORNIX Intelligent Assistants automate administrative documentation, draft clinical notes, summarize patient chart histories, and assist with triage routing.",
-    iconName: "Bot",
-    capabilities: [
-      "Ambient clinical documentation",
-      "Automated triage decision support",
-      "Intelligent patient inquiry routing",
-      "Multi-lingual clinical communication"
-    ],
-    impactMetric: "Reduction in administrative burden",
-    category: "automation"
-  },
-  {
-    id: "predictive-analytics",
-    title: "Predictive Analytics",
-    shortDesc: "Early warning systems predicting patient deterioration, readmission risks, and population health trends.",
-    fullDesc: "Leveraging temporal deep learning architectures, ORNIX Predictive Analytics monitors patient vital telemetry to flag early signs of sepsis, acute cardiac events, and preventable hospital readmissions hours before clinical onset.",
+    id: "machine-learning",
+    title: "Machine Learning",
+    shortDesc:
+      "Predictive analytics and pattern recognition for market forecasting and credit risk scoring.",
+    fullDesc:
+      "Ornix co-develops custom models using internal data for accurate crop, credit, and market forecasting.",
     iconName: "TrendingUp",
     capabilities: [
-      "Early warning telemetry monitoring",
-      "30-day readmission risk scoring",
-      "ICU stay duration optimization",
-      "Chronic disease progression modeling"
+      "Predictive analytics",
+      "Market forecasting",
+      "Credit risk scoring",
+      "Pattern recognition",
     ],
-    impactMetric: "Early risk detection window",
-    category: "predictive"
+    impactMetric: "Data-driven decision intelligence",
+    category: "predictive",
+  },
+  {
+    id: "deep-learning",
+    title: "Deep Learning",
+    shortDesc:
+      "Advanced processing for satellite imagery, medical diagnostics, and multi-modal datasets.",
+    fullDesc:
+      "Ornix engineers tailored neural architectures integrated into existing operational workflows.",
+    iconName: "BrainCircuit",
+    capabilities: [
+      "Satellite imagery analysis",
+      "Advanced diagnostics",
+      "Multi-modal data processing",
+      "Custom neural architectures",
+    ],
+    impactMetric: "Advanced pattern intelligence",
+    category: "predictive",
+  },
+  {
+    id: "natural-language-processing",
+    title: "Natural Language Processing",
+    shortDesc:
+      "Enterprise speech processing and local language intelligence.",
+    fullDesc:
+      "Ornix co-creates localized language engines across Amharic, Afaan Oromo, Tigrinya, and Somali.",
+    iconName: "Bot",
+    capabilities: [
+      "Local language intelligence",
+      "Enterprise speech processing",
+      "Multilingual AI",
+      "Document intelligence",
+    ],
+    impactMetric: "Locally grounded language intelligence",
+    category: "automation",
   },
   {
     id: "computer-vision",
     title: "Computer Vision",
-    shortDesc: "High-precision AI analysis for medical imaging including X-rays, MRIs, CT scans, and histopathology.",
-    fullDesc: "Deep convolutional networks trained on annotated radiology and pathology datasets assist specialists in detecting subtle anomalies, volumetric segmentations, and lesion tracking across longitudinal scans.",
+    shortDesc:
+      "Visual inspection systems for monitoring, quality control, and security.",
+    fullDesc:
+      "Ornix deploys edge-level visual intelligence customized for agricultural pests, factory floors, and logistics hubs.",
     iconName: "Eye",
     capabilities: [
-      "Radiology anomaly classification",
-      "Volumetric organ & tumor segmentation",
-      "Histopathology cell counting",
-      "Longitudinal lesion change tracking"
+      "Agricultural pest detection",
+      "Visual quality inspection",
+      "Operational monitoring",
+      "Edge AI deployment",
     ],
-    impactMetric: "Sub-millimeter detection accuracy",
-    category: "clinical"
+    impactMetric: "Real-time visual intelligence",
+    category: "clinical",
   },
   {
-    id: "natural-language-ai",
-    title: "Natural Language AI",
-    shortDesc: "Domain-specific NLP extracting structured clinical knowledge from unstructured medical research and charts.",
-    fullDesc: "Extract valuable clinical variables, adverse drug events, and ICD/CPT codes from handwritten notes, dictated reports, and peer-reviewed medical literature using healthcare-tuned transformer models.",
-    iconName: "BrainCircuit",
-    capabilities: [
-      "Automated ICD-10 & CPT coding",
-      "Pharmacovigilance signal detection",
-      "Clinical trial matching & screening",
-      "Medical literature knowledge extraction"
-    ],
-    impactMetric: "High-fidelity medical entity extraction",
-    category: "data"
-  },
-  {
-    id: "healthcare-automation",
-    title: "Healthcare Automation",
-    shortDesc: "Streamlining prior authorization, revenue cycle management, and operational hospital workflows.",
-    fullDesc: "End-to-end intelligent workflow automation that bridges clinical criteria with payer requirements, reducing prior authorization delays and optimizing operational throughput across hospital departments.",
+    id: "robotics-autonomous-systems",
+    title: "Robotics & Autonomous Systems",
+    shortDesc:
+      "Intelligent automation software for logistics hubs and manufacturing facilities.",
+    fullDesc:
+      "Ornix integrates smart automation software directly into facility legacy supply chain setups.",
     iconName: "Workflow",
     capabilities: [
-      "Automated prior authorization generation",
-      "Claims denial analysis & remediation",
-      "OR & bed allocation scheduling",
-      "Supply chain consumption prediction"
+      "Intelligent automation",
+      "Logistics optimization",
+      "Manufacturing automation",
+      "Legacy system integration",
     ],
-    impactMetric: "Turnaround time reduction",
-    category: "automation"
-  }
+    impactMetric: "Operational automation",
+    category: "automation",
+  },
+  {
+    id: "expert-systems",
+    title: "Expert Systems",
+    shortDesc:
+      "Automated decision trees codifying institutional knowledge for compliance.",
+    fullDesc:
+      "Ornix codifies institutional knowledge into automated compliance and regulatory frameworks.",
+    iconName: "Database",
+    capabilities: [
+      "Institutional knowledge codification",
+      "Automated decision trees",
+      "Compliance frameworks",
+      "Regulatory intelligence",
+    ],
+    impactMetric: "Institutional knowledge at scale",
+    category: "data",
+  },
+  {
+    id: "fuzzy-cognitive-systems",
+    title: "Fuzzy Logic & Cognitive Systems",
+    shortDesc:
+      "Adaptive logic systems engineered to make precise operational decisions under ambiguous data.",
+    fullDesc:
+      "Ornix architects adaptive logic systems engineered specifically to navigate regional data gaps.",
+    iconName: "BrainCircuit",
+    capabilities: [
+      "Adaptive decision systems",
+      "Ambiguous data processing",
+      "Regional data gap handling",
+      "Cognitive operational intelligence",
+    ],
+    impactMetric: "Adaptive decision intelligence",
+    category: "predictive",
+  },
 ];
 
 export const HEALTHCARE_SECTORS: SectorItem[] = [

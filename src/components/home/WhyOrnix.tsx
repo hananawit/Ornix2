@@ -7,42 +7,40 @@ import { SlideUp, StaggerChildren } from "@/components/ui/FadeIn";
 const WHY_ORNIX_PILLARS = [
   {
     num: "01",
-    title: "AI Expertise",
-    desc: "Built by machine learning scientists pushing boundaries in multi-modal transformers, temporal deep learning, and clinical computer vision.",
+    title: "Sovereign AI & Strict Data Security",
+    desc: "Complete data sovereignty through local hosting compatibility, including Ethio Telecom cloud, and custom on-premise deployments compliant with local financial and public security standards.",
   },
   {
     num: "02",
-    title: "Healthcare Understanding",
-    desc: "Deep integration with clinical workflows, EHR protocols, medical ontologies, and regulatory standards like HIPAA and FHIR R4.",
+    title: "Full-Spectrum Technical Mastery",
+    desc: "Mastery across all 7 branches of Artificial Intelligence, enabling complete end-to-end architectures tailored to institutional challenges.",
   },
   {
     num: "03",
-    title: "Research Driven",
-    desc: "Grounding algorithm architecture in peer-reviewed clinical validation, rigorous benchmarking, and transparent model attribution.",
+    title: "Deep Local Context",
+    desc: "Solutions built by Ethiopian engineers living and working within the local environment, navigating regional supply chains and local language dialects.",
   },
   {
     num: "04",
-    title: "Engineering Excellence",
-    desc: "High-throughput microservices architecture engineered for enterprise uptime, zero latency telemetry, and cloud redundancy.",
+    title: "Ethical & Reasonable AI",
+    desc: "Transparent decision-making, unbiased local representation, and resource-efficient AI models engineered to run reliably within local infrastructure constraints.",
   },
   {
     num: "05",
-    title: "Human-Centered Design",
-    desc: "Intuitively designed clinician interfaces that simplify complex data representations, reducing cognitive fatigue for care providers.",
+    title: "Knowledge Transfer & Capability Building",
+    desc: "Working shoulder-to-shoulder with internal IT and business units to transfer technical skills and foster long-term digital independence.",
   },
 ];
-
 export const WhyOrnix: React.FC = () => {
   return (
     <section className="py-24 bg-white text-ornix-slate-900 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeading
-          theme="light"
-          badge="OUR CORE DIFFERENTIATORS"
-          title="Built at the Intersection of Technology and Healthcare"
-          subtitle="Why healthcare organizations trust ORNIX to deploy critical artificial intelligence infrastructure."
-        />
-
+<SectionHeading
+  theme="light"
+  badge="THE ORNIX DIFFERENCE"
+  title="Built for Sovereign, Local, Full-Spectrum AI"
+  subtitle="Ornix combines technical depth, local context, data sovereignty, ethical AI, and long-term capability building to solve complex institutional challenges."
+/>
         <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {WHY_ORNIX_PILLARS.map((pillar) => (
             <SlideUp key={pillar.num}>

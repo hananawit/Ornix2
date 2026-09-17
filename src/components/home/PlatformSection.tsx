@@ -13,12 +13,11 @@ export const PlatformSection: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading
-          badge="ARCHITECTURE OVERVIEW"
-          title="One Intelligence Layer for Modern Healthcare"
-          highlightText="Intelligence Layer"
-          subtitle="From raw unstructured patient streams to verified physician decisions, ORNIX connects every stage of healthcare operations into a seamless intelligent loop."
+badge="SOVEREIGN AI ARCHITECTURE"
+title="AI Built Around Your Organization"
+highlightText="Your Organization"
+subtitle="Ornix co-engineers sovereign, locally grounded AI systems around your operational roadmap—connecting data, intelligence, applications, and institutional knowledge into a continuously evolving technology foundation."
         />
-
         <SlideUp delay={0.2}>
           <PlatformArchitecture />
         </SlideUp>
