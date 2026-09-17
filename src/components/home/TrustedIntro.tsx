@@ -2,11 +2,10 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Brain, HeartPulse, Database, FlaskConical, Cpu, ArrowUpRight } from "lucide-react";
+import { Brain, FlaskConical, Cpu, ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SlideUp, FadeIn } from "@/components/ui/FadeIn";
 import { cn } from "@/lib/utils";
-
 interface Pillar {
   id: string;
   name: string;
@@ -17,39 +16,28 @@ interface Pillar {
 
 const PILLARS: Pillar[] = [
   {
-    id: "ai",
-    name: "Artificial Intelligence",
-    tagline: "Domain-Tuned Machine Intelligence",
+    id: "goal",
+    name: "The Goal",
+    tagline: "Client-First Technology",
     icon: <Brain className="w-6 h-6 text-ornix-yellow" />,
-    description: "Deep neural networks and foundation models trained specifically on medical ontologies, clinical notes, and multi-parametric vital telemetry.",
+    description:
+      "Position Ethiopia at the forefront of the African AI revolution through client-first technology.",
   },
   {
-    id: "healthcare",
-    name: "Healthcare Expertise",
-    tagline: "Clinical-First Integration",
-    icon: <HeartPulse className="w-6 h-6 text-ornix-yellow" />,
-    description: "Designed alongside physicians and medical researchers to ensure every algorithmic output respects clinical workflows and patient care standards.",
-  },
-  {
-    id: "data",
-    name: "Data Engineering",
-    tagline: "FHIR-Native Interoperability",
-    icon: <Database className="w-6 h-6 text-ornix-yellow" />,
-    description: "Harmonizing fragmented legacy hospital databases into unified real-time FHIR graphs for seamless cross-institution insights.",
-  },
-  {
-    id: "research",
-    name: "Translational Research",
-    tagline: "Evidence-Based Machine Learning",
+    id: "strategy",
+    name: "The Strategy",
+    tagline: "Long-Term Co-Innovation",
     icon: <FlaskConical className="w-6 h-6 text-ornix-yellow" />,
-    description: "Pioneering peer-reviewed algorithms validated through rigorous retrospective and prospective clinical trials.",
+    description:
+      "Shift from transactional software sales to dedicated, long-term co-innovation.",
   },
   {
-    id: "engineering",
-    name: "Systems Engineering",
-    tagline: "HIPAA-Compliant Scale",
+    id: "solution",
+    name: "The Solution",
+    tagline: "Sovereign & Local AI",
     icon: <Cpu className="w-6 h-6 text-ornix-yellow" />,
-    description: "High-throughput microservices architecture delivering sub-second inference latency with zero-trust encryption at rest and in transit.",
+    description:
+      "Deliver sovereign, locally grounded, full-spectrum AI built alongside clients to solve complex sector challenges.",
   },
 ];
 
@@ -63,15 +51,14 @@ export const TrustedIntro: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading
           theme="light"
-          badge="FOUNDATIONAL PHILOSOPHY"
-          title="Where Intelligence Meets Healthcare"
-          subtitle="Healthcare generates enormous amounts of information. ORNIX connects that information with artificial intelligence, analytics, and intelligent software to help organizations understand complexity and build better digital systems."
+       badge="CORE VALUE PROPOSITION"
+title="Co-Innovation Built for Ethiopia"
+subtitle="Ornix AI seeks to lead Africa’s AI revolution by acting as Ethiopia’s long-term co-innovation partner—delivering sovereign, full-spectrum artificial intelligence tailored to local enterprise needs."
         />
 
         {/* 5 Interactive Pillars Bar */}
         <SlideUp delay={0.2}>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-8">
-            {PILLARS.map((pillar) => {
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 max-w-5xl mx-auto">            {PILLARS.map((pillar) => {
               const isActive = pillar.id === activePillarId;
               return (
                 <button
@@ -118,8 +105,7 @@ export const TrustedIntro: React.FC = () => {
               </div>
               <div>
                 <span className="text-xs font-mono text-ornix-yellow uppercase tracking-widest block mb-1">
-                  PILLAR EXPLORATION
-                </span>
+ORNIX APPROACH                </span>
                 <h3 className="text-2xl font-bold font-heading text-white mb-2">{activePillar.name}</h3>
                 <p className="text-ornix-slate-300 text-base leading-relaxed max-w-2xl">
                   {activePillar.description}
@@ -132,7 +118,7 @@ export const TrustedIntro: React.FC = () => {
                 href="#solutions"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-ornix-yellow text-ornix-navy-950 font-semibold text-sm hover:bg-ornix-yellow-hover transition-colors"
               >
-                <span>Learn How We Apply This</span>
+                <span>Explore Our Approach</span>
                 <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>

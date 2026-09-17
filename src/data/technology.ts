@@ -11,47 +11,140 @@ export interface TechCategory {
 
 export const TECH_CATEGORIES: TechCategory[] = [
   {
-    id: "ai-ml",
-    categoryName: "AI & Machine Learning",
-    description: "Domain-specific architectures optimized for clinical telemetry, medical images, and natural language.",
+    id: "ai-intelligence",
+    categoryName: "AI & Intelligence",
+    description:
+      "Core artificial intelligence capabilities engineered around institutional challenges and local operational realities.",
     items: [
-      { name: "Machine Learning", description: "Supervised and self-supervised model architectures tuned on clinical corpuses.", iconName: "Brain" },
-      { name: "Deep Learning", description: "Multi-layered convolutional networks and temporal sequence models.", iconName: "Layers" },
-      { name: "Generative AI", description: "HIPAA-aligned foundation models for clinical note synthesis and summarization.", iconName: "Sparkles" },
-      { name: "NLP", description: "Domain-specific entity extraction and ICD/CPT medical code mapping.", iconName: "FileCode" },
-      { name: "Computer Vision", description: "Sub-millimeter anomaly detection in DICOM radiological scans and pathology.", iconName: "Scan" }
-    ]
+      {
+        name: "Machine Learning",
+        description:
+          "Custom predictive models for forecasting, pattern recognition, classification, and data-driven decision support.",
+        iconName: "Brain",
+      },
+      {
+        name: "Deep Learning",
+        description:
+          "Tailored neural architectures for complex patterns, satellite imagery, medical diagnostics, and multi-modal datasets.",
+        iconName: "Layers",
+      },
+      {
+        name: "Natural Language Processing",
+        description:
+          "Localized language intelligence for enterprise documents, speech processing, knowledge retrieval, and multilingual applications.",
+        iconName: "FileCode",
+      },
+      {
+        name: "Computer Vision",
+        description:
+          "Visual intelligence for inspection, monitoring, agricultural applications, security, and operational environments.",
+        iconName: "Scan",
+      },
+      {
+        name: "Generative AI",
+        description:
+          "Generative intelligence integrated into institutional workflows for knowledge assistance, content generation, and intelligent interaction.",
+        iconName: "Sparkles",
+      },
+    ],
   },
+
   {
-    id: "data-engineering",
-    categoryName: "Data Infrastructure",
-    description: "Robust data pipelines handling high-velocity hospital stream telemetry and FHIR endpoints.",
+    id: "data-intelligence",
+    categoryName: "Data & Intelligence",
+    description:
+      "Data foundations that transform institutional information into usable intelligence while respecting governance and operational requirements.",
     items: [
-      { name: "Data Engineering", description: "Streaming event pipelines parsing 10k+ data points per second.", iconName: "Workflow" },
-      { name: "Analytics", description: "Real-time population health trends and patient readmission risk scoring.", iconName: "BarChart" },
-      { name: "Knowledge Graphs", description: "Semantic medical ontology networks linking symptoms, diagnoses, and lab values.", iconName: "Network" },
-      { name: "Vector Search", description: "High-dimensional vector indexing for clinical literature semantic retrieval.", iconName: "Search" }
-    ]
+      {
+        name: "Data Engineering",
+        description:
+          "Structured data pipelines that connect organizational sources and prepare information for reliable AI and analytics.",
+        iconName: "Workflow",
+      },
+      {
+        name: "Data Analytics",
+        description:
+          "Descriptive, diagnostic, predictive, and decision-support analytics built around institutional priorities.",
+        iconName: "BarChart",
+      },
+      {
+        name: "Knowledge Systems",
+        description:
+          "Structured representations of institutional knowledge that support intelligent search, reasoning, and decision assistance.",
+        iconName: "Network",
+      },
+      {
+        name: "Intelligent Search",
+        description:
+          "Semantic retrieval systems that help organizations discover relevant information across documents and knowledge repositories.",
+        iconName: "Search",
+      },
+    ],
   },
+
   {
-    id: "engineering-cloud",
-    categoryName: "Secure Engineering",
-    description: "Enterprise-grade cloud infrastructure meeting strict medical data compliance standards.",
+    id: "software-architecture",
+    categoryName: "Software & Architecture",
+    description:
+      "Scalable software foundations that connect AI capabilities with existing organizational systems and operational workflows.",
     items: [
-      { name: "APIs & SDKs", description: "RESTful and gRPC endpoints for rapid EHR and hospital software integration.", iconName: "Code" },
-      { name: "Cloud Architecture", description: "Multi-region redundant cloud and sovereign hybrid-cloud deployments.", iconName: "Cloud" },
-      { name: "Microservices", description: "Decoupled, containerized inference workers with automated scaling.", iconName: "Boxes" },
-      { name: "Secure Architecture", description: "End-to-end AES-256 encryption in transit and at rest with zero-trust RBAC.", iconName: "Lock" }
-    ]
+      {
+        name: "APIs & System Integration",
+        description:
+          "Secure service interfaces that allow AI capabilities to connect with existing enterprise applications and workflows.",
+        iconName: "Code",
+      },
+      {
+        name: "Cloud Architecture",
+        description:
+          "Cloud-ready architectures supporting scalable deployment while accommodating local infrastructure and sovereignty requirements.",
+        iconName: "Cloud",
+      },
+      {
+        name: "Microservices",
+        description:
+          "Modular service architectures designed for maintainability, scalability, and independent evolution of system capabilities.",
+        iconName: "Boxes",
+      },
+      {
+        name: "Secure Architecture",
+        description:
+          "Security-conscious system design aligned with institutional data protection, access control, and governance requirements.",
+        iconName: "Lock",
+      },
+    ],
   },
+
   {
-    id: "integration-interop",
-    categoryName: "Healthcare Integration",
-    description: "Interoperability adapters for legacy and modern digital health ecosystems.",
+    id: "sovereign-infrastructure",
+    categoryName: "Sovereign Infrastructure",
+    description:
+      "Deployment approaches designed to keep institutional data and AI capabilities under appropriate organizational control.",
     items: [
-      { name: "Healthcare Systems", description: "HL7 v2/v3, FHIR R4/R5, and DICOM native protocol adapters.", iconName: "Heart" },
-      { name: "Enterprise Systems", description: "Integration with major ERPs, revenue cycle managers, and payer platforms.", iconName: "Building" },
-      { name: "External Data", description: "Secure synchronization with public health registries and genomic databases.", iconName: "Globe" }
-    ]
-  }
+      {
+        name: "Local Cloud",
+        description:
+          "AI and software architectures compatible with secure local cloud environments, including Ethio Telecom cloud.",
+        iconName: "Cloud",
+      },
+      {
+        name: "On-Premise AI",
+        description:
+          "Custom deployment architectures for institutions requiring controlled infrastructure and local data environments.",
+        iconName: "Building",
+      },
+      {
+        name: "Data Sovereignty",
+        description:
+          "Architectures designed to support institutional control over sensitive data, models, and operational intelligence.",
+        iconName: "Lock",
+      },
+      {
+        name: "Enterprise Integration",
+        description:
+          "AI capabilities connected directly to existing institutional systems instead of operating as isolated technology products.",
+        iconName: "Globe",
+      },
+    ],
+  },
 ];

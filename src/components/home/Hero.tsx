@@ -55,57 +55,59 @@ export const Hero: React.FC = () => {
             <SlideUp delay={0.1}>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-ornix-yellow/40 text-ornix-yellow text-xs font-semibold uppercase tracking-wider mb-6 shadow-sm backdrop-blur-sm">
                 <Sparkles className="w-3.5 h-3.5" />
-                AI + HEALTHCARE INTELLIGENCE
+                SOVEREIGN AI • ETHIOPIA • AFRICA
               </div>
             </SlideUp>
 
             <SlideUp delay={0.2}>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-tight leading-[1.08] mb-6 drop-shadow-lg">
-                Intelligence for a{" "}
-                <span className="text-ornix-yellow relative inline-block">
-                  Healthier Future.
-                  <span className="absolute bottom-1.5 left-0 w-full h-1.5 bg-ornix-yellow/30 rounded-full" />
-                </span>
-              </h1>
+<h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-tight leading-[1.08] mb-6 drop-shadow-lg">
+  Bridging{" "}
+  <span className="text-ornix-yellow relative inline-block">
+    AI & Ethiopia's Growth.
+  </span>
+</h1>
             </SlideUp>
 
             <SlideUp delay={0.3}>
               <p className="text-base sm:text-lg md:text-xl text-white/80 font-normal leading-relaxed mb-8 max-w-xl drop-shadow">
-                ORNIX combines artificial intelligence, healthcare expertise, and data-driven innovation to transform complex information into meaningful intelligence.
-              </p>
+We are here to effectively bridge high-level technical depth with Ethiopia's economic growth pillars, becoming an indispensable national technology partner rather than just another IT vendor.              </p>
             </SlideUp>
 
             <SlideUp delay={0.4}>
               <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto">
                 <Button href="/solutions" variant="accent" size="lg" icon={<ArrowRight className="w-5 h-5" />}>
-                  Explore Solutions
-                </Button>
+Explore Our Capabilities                </Button>
                 <Button href="/contact" variant="glass" size="lg">
-                  Talk to ORNIX
-                </Button>
+Partner With Ornix                </Button>
               </div>
             </SlideUp>
 
-            <SlideUp delay={0.5}>
-              <div className="mt-12 flex items-center gap-6 pt-6 border-t border-white/15 text-xs text-white/60 font-mono">
-                <div className="flex items-center gap-2">
-                  <Activity className="w-4 h-4 text-ornix-yellow" />
-                  <span>Clinical Grade Models</span>
-                </div>
-                <div className="w-1 h-1 rounded-full bg-white/30" />
-                <span>HIPAA Aligned</span>
-                <div className="w-1 h-1 rounded-full bg-white/30" />
-                <span>FHIR Native</span>
-              </div>
-            </SlideUp>
+<SlideUp delay={0.5}>
+  <div className="mt-12 flex items-center gap-6 pt-6 border-t border-white/15 text-xs text-white/60 font-mono">
+    <div className="flex items-center gap-2">
+      <Activity className="w-4 h-4 text-ornix-yellow" />
+      <span>Sovereign AI</span>
+    </div>
+
+    <div className="w-1 h-1 rounded-full bg-white/30" />
+
+    <span>Local Intelligence</span>
+
+    <div className="w-1 h-1 rounded-full bg-white/30" />
+
+    <span>Co-Innovation</span>
+  </div>
+</SlideUp>
           </div>
 
           {/* Right Column: AI Visualizer */}
-          <div className="lg:col-span-6 w-full">
-            <FadeIn delay={0.3}>
-              <HeroVisualization />
-            </FadeIn>
-          </div>
+<div className="lg:col-span-6 w-full">
+  <FadeIn delay={0.3}>
+<div className="relative w-full aspect-[16/9]">
+  <HeroVisualization />
+</div>
+  </FadeIn>
+</div>
         </div>
       </div>
     </section>

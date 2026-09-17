@@ -6,43 +6,79 @@ export interface TeamMember {
   avatarPlaceholder: string;
   linkedin: string;
   category: "leadership" | "research" | "engineering" | "clinical";
+  image: string;
 }
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: "team-1",
-    name: "[Executive Leader Name]",
-    role: "Chief Executive Officer & Co-Founder",
-    bio: "Placeholder bio: Experienced executive bridging artificial intelligence research, healthcare software delivery, and enterprise scale.",
-    avatarPlaceholder: "CEO",
-    linkedin: "https://linkedin.com",
-    category: "leadership"
+    name: "Tigistu Tafa",
+    role: "Information System Security Manager",
+    bio: "Cybersecurity & Systems",
+    avatarPlaceholder: "TT",
+    linkedin: "",
+    category: "engineering",
+    image: "/team/tigistu.jpg",
   },
   {
     id: "team-2",
-    name: "[Chief Medical Officer Name]",
-    role: "Chief Medical Officer",
-    bio: "Placeholder bio: Board-certified clinical specialist guiding ORNIX model safety, validation protocols, and physician integration.",
-    avatarPlaceholder: "CMO",
-    linkedin: "https://linkedin.com",
-    category: "clinical"
+    name: "Henok T. Molla",
+    role: "Finance Manager",
+    bio: "Strategy & Finance",
+    avatarPlaceholder: "HM",
+    linkedin: "",
+    category: "leadership",
+    image: "/team/henok.jpg",
   },
   {
     id: "team-3",
-    name: "[VP AI Research Name]",
-    role: "VP of Artificial Intelligence Research",
-    bio: "Placeholder bio: Machine learning scientist specializing in multi-modal healthcare transformers and temporal deep learning models.",
-    avatarPlaceholder: "VPR",
-    linkedin: "https://linkedin.com",
-    category: "research"
+    name: "Yeabsra Tamirat",
+    role: "Senior ICT Expert",
+    bio: "ICT Architecture",
+    avatarPlaceholder: "YT",
+    linkedin: "",
+    category: "engineering",
+    image: "/team/yeabsra.jpg",
   },
   {
     id: "team-4",
-    name: "[VP Engineering Name]",
-    role: "VP of Engineering & Systems",
-    bio: "Placeholder bio: Enterprise system architect leading secure FHIR data pipelines, microservices, and cloud infrastructure.",
-    avatarPlaceholder: "VPE",
-    linkedin: "https://linkedin.com",
-    category: "engineering"
-  }
+    name: "Dr. Messay Tesfaye",
+    role: "Health Sector Expert / Health Domain Expert",
+    bio: "Pediatric Dermatology",
+    avatarPlaceholder: "MT",
+    linkedin: "",
+    category: "clinical",
+    image: "/team/messay.jpg",
+  },
+  {
+    id: "team-5",
+    name: "Dr. Hasset",
+    role: "Health Sector Expert / Health Domain Expert",
+    bio: "Clinical Nutrition",
+    avatarPlaceholder: "DH",
+    linkedin: "",
+    category: "clinical",
+    image: "/team/hasset.jpg",
+  },
+  {
+    id: "team-6",
+    name: "Hanan Temam",
+    role: "AI & Machine Learning Enthusiast, Developer",
+    bio: "Applied AI",
+    avatarPlaceholder: "HT",
+    linkedin: "",
+    // linkedin: "www.linkedin.com/in/hanan-temam-42b7b4172",
+    category: "research",
+    image: "/team/image.png",
+  },
+  //   {
+  //   id: "team-7",
+  //   name: "Meron Tessema",
+  //   role: "Software Engineer & Digital Systems Officer ",
+  //   bio: "Software Development",
+  //   avatarPlaceholder: "MT",
+  //   linkedin: "",
+  //   category: "research",
+  //   image: "/team/Meron.png",
+  // },
 ];

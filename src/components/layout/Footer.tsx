@@ -27,10 +27,9 @@ export const Footer: React.FC = () => {
               "{BRAND_TAGLINE}"
             </p>
 
-            <p className="text-xs leading-relaxed text-ornix-slate-500 max-w-sm">
-              ORNIX combines artificial intelligence, healthcare domain expertise, and data-driven innovation to build smarter, more responsive healthcare systems.
-            </p>
-
+<p className="text-xs leading-relaxed text-ornix-slate-500 max-w-sm">
+  Ornix AI Solutions PLC combines technical depth, local context, and sovereign artificial intelligence to build long-term technology partnerships around Ethiopia&apos;s institutional needs.
+</p>
             {/* Social Links */}
             <div className="flex items-center gap-3 pt-2">
               <a
@@ -63,67 +62,154 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Solutions Column */}
-          <div className="lg:col-span-2 flex flex-col gap-4">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider font-heading">Solutions</h4>
-            <ul className="space-y-2.5 text-sm">
-              <li><Link href="/solutions#clinical-intelligence" className="hover:text-ornix-yellow transition-colors">Clinical Intelligence</Link></li>
-              <li><Link href="/solutions#medical-data-intelligence" className="hover:text-ornix-yellow transition-colors">Medical Data</Link></li>
-              <li><Link href="/solutions#intelligent-assistants" className="hover:text-ornix-yellow transition-colors">Intelligent Assistants</Link></li>
-              <li><Link href="/solutions#predictive-analytics" className="hover:text-ornix-yellow transition-colors">Predictive Analytics</Link></li>
-              <li><Link href="/solutions#computer-vision" className="hover:text-ornix-yellow transition-colors">Computer Vision</Link></li>
-              <li><Link href="/solutions#natural-language-ai" className="hover:text-ornix-yellow transition-colors">Natural Language AI</Link></li>
-            </ul>
-          </div>
+{/* Solutions Column */}
+<div className="lg:col-span-2 flex flex-col gap-4">
+  <h4 className="text-sm font-bold text-white uppercase tracking-wider font-heading">
+    Solutions
+  </h4>
 
-          {/* Research & Platform Column */}
-          <div className="lg:col-span-2 flex flex-col gap-4">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider font-heading">Research</h4>
-            <ul className="space-y-2.5 text-sm">
-              <li><Link href="/research#pipeline" className="hover:text-ornix-yellow transition-colors">Research Pipeline</Link></li>
-              <li><Link href="/research#focus-areas" className="hover:text-ornix-yellow transition-colors">Focus Areas</Link></li>
-              <li><Link href="/research#publications" className="hover:text-ornix-yellow transition-colors">Publications</Link></li>
-              <li><Link href="/research#responsible-ai" className="hover:text-ornix-yellow transition-colors">Responsible AI</Link></li>
-              <li><Link href="/products" className="hover:text-ornix-yellow transition-colors">Platform Suite</Link></li>
-            </ul>
-          </div>
+  <ul className="space-y-2.5 text-sm">
+    <li>
+      <Link href="/solutions#machine-learning" className="hover:text-ornix-yellow transition-colors">
+        Machine Learning
+      </Link>
+    </li>
+    <li>
+      <Link href="/solutions#deep-learning" className="hover:text-ornix-yellow transition-colors">
+        Deep Learning
+      </Link>
+    </li>
+    <li>
+      <Link href="/solutions#nlp" className="hover:text-ornix-yellow transition-colors">
+        Natural Language Processing
+      </Link>
+    </li>
+    <li>
+      <Link href="/solutions#computer-vision" className="hover:text-ornix-yellow transition-colors">
+        Computer Vision
+      </Link>
+    </li>
+    <li>
+      <Link href="/solutions#robotics" className="hover:text-ornix-yellow transition-colors">
+        Robotics & Autonomous Systems
+      </Link>
+    </li>
+    <li>
+      <Link href="/solutions#expert-systems" className="hover:text-ornix-yellow transition-colors">
+        Expert Systems
+      </Link>
+    </li>
+    <li>
+      <Link href="/solutions#fuzzy-logic" className="hover:text-ornix-yellow transition-colors">
+        Fuzzy Logic & Cognitive Systems
+      </Link>
+    </li>
+  </ul>
+</div>
 
-          {/* Company Column */}
-          <div className="lg:col-span-2 flex flex-col gap-4">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider font-heading">Company</h4>
-            <ul className="space-y-2.5 text-sm">
-              <li><Link href="/about" className="hover:text-ornix-yellow transition-colors">About ORNIX</Link></li>
-              <li><Link href="/about#mission" className="hover:text-ornix-yellow transition-colors">Mission & Vision</Link></li>
-              <li><Link href="/about#team" className="hover:text-ornix-yellow transition-colors">Leadership & Team</Link></li>
-              <li><Link href="/resources" className="hover:text-ornix-yellow transition-colors">Resources & Insights</Link></li>
-              <li><Link href="/contact" className="hover:text-ornix-yellow transition-colors">Contact Us</Link></li>
-            </ul>
-          </div>
+{/* Sectors Column */}
+<div className="lg:col-span-2 flex flex-col gap-4">
+  <h4 className="text-sm font-bold text-white uppercase tracking-wider font-heading">
+    Sectors
+  </h4>
 
-          {/* Compliance & Contact Column */}
-          <div className="lg:col-span-2 flex flex-col gap-4">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider font-heading">Standards</h4>
-            <div className="space-y-3 text-xs text-ornix-slate-400">
-              <div className="flex items-center gap-2">
-                <Shield className="w-4 h-4 text-ornix-yellow" />
-                <span>HIPAA Aligned Security</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-ornix-yellow" />
-                <span>FHIR R4 Interoperable</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-ornix-yellow" />
-                <span>Clinical Grade AI</span>
-              </div>
-            </div>
-          </div>
-        </div>
+  <ul className="space-y-2.5 text-sm">
+    <li>
+      <Link href="/sectors#agritech" className="hover:text-ornix-yellow transition-colors">
+        AgriTech
+      </Link>
+    </li>
+    <li>
+      <Link href="/sectors#fintech" className="hover:text-ornix-yellow transition-colors">
+        FinTech & Banking
+      </Link>
+    </li>
+    <li>
+      <Link href="/sectors#healthcare" className="hover:text-ornix-yellow transition-colors">
+        Healthcare
+      </Link>
+    </li>
+    <li>
+      <Link href="/sectors#manufacturing" className="hover:text-ornix-yellow transition-colors">
+        Manufacturing & Logistics
+      </Link>
+    </li>
+    <li>
+      <Link href="/sectors#public-sector" className="hover:text-ornix-yellow transition-colors">
+        Public Sector
+      </Link>
+    </li>
+  </ul>
+</div>
+
+ {/* Company Column */}
+<div className="lg:col-span-2 flex flex-col gap-4">
+  <h4 className="text-sm font-bold text-white uppercase tracking-wider font-heading">
+    Company
+  </h4>
+
+  <ul className="space-y-2.5 text-sm">
+    <li>
+      <Link href="/about" className="hover:text-ornix-yellow transition-colors">
+        About Ornix
+      </Link>
+    </li>
+    <li>
+      <Link href="/about#mission" className="hover:text-ornix-yellow transition-colors">
+        Mission & Vision
+      </Link>
+    </li>
+    <li>
+      <Link href="/about#team" className="hover:text-ornix-yellow transition-colors">
+        Our Team
+      </Link>
+    </li>
+    <li>
+      <Link href="/partnerships" className="hover:text-ornix-yellow transition-colors">
+        Partnerships
+      </Link>
+    </li>
+    <li>
+      <Link href="/contact" className="hover:text-ornix-yellow transition-colors">
+        Contact Us
+      </Link>
+    </li>
+  </ul>
+</div>
+
+{/* Ornix Principles Column */}
+<div className="lg:col-span-2 flex flex-col gap-4">
+  <h4 className="text-sm font-bold text-white uppercase tracking-wider font-heading">
+    Our Principles
+  </h4>
+
+  <div className="space-y-3 text-xs text-ornix-slate-400">
+    <div className="flex items-center gap-2">
+      <Shield className="w-4 h-4 text-ornix-yellow shrink-0" />
+      <span>Data Sovereignty</span>
+    </div>
+
+    <div className="flex items-center gap-2">
+      <CheckCircle className="w-4 h-4 text-ornix-yellow shrink-0" />
+      <span>Locally Grounded AI</span>
+    </div>
+
+    <div className="flex items-center gap-2">
+      <CheckCircle className="w-4 h-4 text-ornix-yellow shrink-0" />
+      <span>Secure AI Infrastructure</span>
+    </div>
+
+    <div className="flex items-center gap-2">
+      <CheckCircle className="w-4 h-4 text-ornix-yellow shrink-0" />
+      <span>Knowledge Transfer</span>
+    </div>
+  </div>
+</div>
+</div>
 
         {/* Footer Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ornix-slate-400">
-          <p>Â© {new Date().getFullYear()} ORNIX Inc. All rights reserved.</p>
-          <div className="flex items-center gap-6">
+<p>© {new Date().getFullYear()} Ornix AI Solutions PLC. All rights reserved.</p>          <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-ornix-yellow transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-ornix-yellow transition-colors">Terms of Service</Link>
             <Link href="/contact" className="hover:text-ornix-yellow transition-colors">Security & Trust</Link>

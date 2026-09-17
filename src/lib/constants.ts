@@ -1,18 +1,27 @@
 export const BRAND_NAME = "ORNIX";
-export const BRAND_TAGLINE = "Intelligence for a Healthier Future.";
+
+export const BRAND_COMPANY = "Ornix AI Solutions PLC";
+
+export const BRAND_TAGLINE = "Sovereign AI. Built for Ethiopia.";
+
 export const BRAND_DESCRIPTION =
-  "ORNIX brings artificial intelligence, healthcare expertise, and data-driven innovation together to build smarter healthcare systems.";
+  "Ornix AI Solutions PLC is Ethiopia's long-term AI co-innovation partner, delivering sovereign, locally grounded, full-spectrum artificial intelligence for enterprises and public institutions.";
+
+export const CONTACT_EMAIL = "partner@ornix.ai";
+
+export const HEADQUARTERS = "Addis Ababa, Ethiopia";
 
 export const HERO_VIDEO = "/bgvideo.mp4";
+
 export const LOGO_PATH = "/ornix-logo.png";
 
-export const SITE_URL = "https://ornix.health";
+export const SITE_URL = "https://ornix.ai";
 
 export const NAV_LINKS = [
   { name: "Home", href: "/" },
-  { name: "Solutions", href: "/solutions" },
-  { name: "Research", href: "/research" },
-  { name: "Products", href: "/products" },
   { name: "About", href: "/about" },
-  { name: "Resources", href: "/resources" },
+  { name: "Solutions", href: "/solutions" },
+  { name: "Sectors", href: "/sectors" },
+  { name: "Partnerships", href: "/partnerships" },
+  { name: "Contact", href: "/contact" },
 ];
