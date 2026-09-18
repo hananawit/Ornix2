@@ -28,17 +28,21 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyles =
-    "relative z-20 pointer-events-auto touch-manipulation select-none inline-flex items-center justify-center font-medium transition-all duration-300 rounded-full focus:outline-none focus:ring-2 focus:ring-ornix-yellow/50 disabled:opacity-50 disabled:pointer-events-none cursor-pointer";
+    "relative z-20 pointer-events-auto touch-manipulation select-none inline-flex items-center justify-center font-medium transition-all duration-300 rounded-none focus:outline-none focus:ring-2 focus:ring-ornix-yellow/50 disabled:opacity-50 disabled:pointer-events-none cursor-pointer";
 
   const variants = {
     primary:
       "bg-ornix-navy-800 text-white border border-white/10 hover:bg-ornix-navy-700 hover:border-ornix-yellow/40 shadow-lg shadow-ornix-navy-950/50",
+
     accent:
       "bg-ornix-yellow text-ornix-navy-900 font-semibold hover:bg-ornix-yellow-hover hover:shadow-lg hover:shadow-ornix-yellow/20 text-ornix-navy-950",
+
     glass:
       "glass-panel text-white hover:bg-white/10 hover:border-white/20 backdrop-blur-md",
+
     outline:
       "border border-white/20 text-white hover:border-ornix-yellow hover:text-ornix-yellow bg-transparent",
+
     ghost:
       "text-ornix-slate-200 hover:text-ornix-yellow hover:bg-white/5 bg-transparent",
   };
@@ -83,9 +87,7 @@ export const Button: React.FC<ButtonProps> = ({
       >
         <Link
           href={href}
-          onClick={
-            onClick as React.MouseEventHandler<HTMLAnchorElement>
-          }
+          onClick={onClick as React.MouseEventHandler<HTMLAnchorElement>}
           className={combinedClasses}
         >
           {content}
@@ -99,9 +101,7 @@ export const Button: React.FC<ButtonProps> = ({
       whileTap={{ scale: 0.97 }}
       className={combinedClasses}
       disabled={disabled}
-      onClick={
-        onClick as React.MouseEventHandler<HTMLButtonElement>
-      }
+      onClick={onClick as React.MouseEventHandler<HTMLButtonElement>}
       {...(props as HTMLMotionProps<"button">)}
     >
       {content}

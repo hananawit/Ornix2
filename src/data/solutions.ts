@@ -34,6 +34,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
     impactMetric: "Data-driven decision intelligence",
     category: "predictive",
   },
+
   {
     id: "deep-learning",
     title: "Deep Learning",
@@ -41,7 +42,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
       "Advanced processing for satellite imagery, medical diagnostics, and multi-modal datasets.",
     fullDesc:
       "Ornix engineers tailored neural architectures integrated into existing operational workflows.",
-    iconName: "BrainCircuit",
+    iconName: "Layers",
     capabilities: [
       "Satellite imagery analysis",
       "Advanced diagnostics",
@@ -51,6 +52,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
     impactMetric: "Advanced pattern intelligence",
     category: "predictive",
   },
+
   {
     id: "natural-language-processing",
     title: "Natural Language Processing",
@@ -58,7 +60,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
       "Enterprise speech processing and local language intelligence.",
     fullDesc:
       "Ornix co-creates localized language engines across Amharic, Afaan Oromo, Tigrinya, and Somali.",
-    iconName: "Bot",
+    iconName: "Languages",
     capabilities: [
       "Local language intelligence",
       "Enterprise speech processing",
@@ -68,6 +70,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
     impactMetric: "Locally grounded language intelligence",
     category: "automation",
   },
+
   {
     id: "computer-vision",
     title: "Computer Vision",
@@ -85,6 +88,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
     impactMetric: "Real-time visual intelligence",
     category: "clinical",
   },
+
   {
     id: "robotics-autonomous-systems",
     title: "Robotics & Autonomous Systems",
@@ -92,7 +96,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
       "Intelligent automation software for logistics hubs and manufacturing facilities.",
     fullDesc:
       "Ornix integrates smart automation software directly into facility legacy supply chain setups.",
-    iconName: "Workflow",
+    iconName: "Bot",
     capabilities: [
       "Intelligent automation",
       "Logistics optimization",
@@ -102,6 +106,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
     impactMetric: "Operational automation",
     category: "automation",
   },
+
   {
     id: "expert-systems",
     title: "Expert Systems",
@@ -109,7 +114,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
       "Automated decision trees codifying institutional knowledge for compliance.",
     fullDesc:
       "Ornix codifies institutional knowledge into automated compliance and regulatory frameworks.",
-    iconName: "Database",
+    iconName: "ShieldCheck",
     capabilities: [
       "Institutional knowledge codification",
       "Automated decision trees",
@@ -119,6 +124,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
     impactMetric: "Institutional knowledge at scale",
     category: "data",
   },
+
   {
     id: "fuzzy-cognitive-systems",
     title: "Fuzzy Logic & Cognitive Systems",
@@ -126,7 +132,7 @@ export const AI_SOLUTIONS: SolutionItem[] = [
       "Adaptive logic systems engineered to make precise operational decisions under ambiguous data.",
     fullDesc:
       "Ornix architects adaptive logic systems engineered specifically to navigate regional data gaps.",
-    iconName: "BrainCircuit",
+    iconName: "Cpu",
     capabilities: [
       "Adaptive decision systems",
       "Ambiguous data processing",
@@ -137,7 +143,6 @@ export const AI_SOLUTIONS: SolutionItem[] = [
     category: "predictive",
   },
 ];
-
 export const HEALTHCARE_SECTORS: SectorItem[] = [
   {
     id: "hospitals",

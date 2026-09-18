@@ -9,6 +9,12 @@ export interface Partner {
 
 export const PARTNERS: Partner[] = [
   {
+    id: "eaii",
+    name: "Ethiopian Artificial Intelligence Institute",
+    type: "Strategic AI Partner",
+    logo: "/partners/EAII.png",
+  },
+  {
     id: "moh",
     name: "Ministry of Health",
     type: "Government Institution",

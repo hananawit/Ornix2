@@ -69,8 +69,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, current
             </Button>
 
             <div className="flex items-center justify-between text-xs text-ornix-slate-400 font-mono pt-2">
-              <span>ORNIX AI + HEALTHCARE</span>
-              <span>Â© {new Date().getFullYear()}</span>
+<span>ORNIX AI SOLUTIONS</span>
+<span>© {new Date().getFullYear()}</span>
             </div>
           </motion.div>
         </motion.div>

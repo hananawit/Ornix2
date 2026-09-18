@@ -3,12 +3,12 @@ export interface ContactFormData {
   organization: string;
   email: string;
   phone?: string;
-  areaOfInterest: 
+  areaOfInterest:
     | "AI Solutions"
-    | "Healthcare Solutions"
-    | "Research Collaboration"
+    | "Sector Solutions"
     | "Digital Transformation"
     | "Partnership"
+    | "Strategic Collaboration"
     | "General Inquiry";
   message: string;
 }
@@ -20,13 +20,10 @@ export interface ContactSubmissionResult {
   error?: string;
 }
 
-/**
- * Service handler for submitting contact form requests.
- * Standardized API abstraction allowing seamless backend integration.
- */
-export async function submitContactForm(data: ContactFormData): Promise<ContactSubmissionResult> {
-  // Validate basic required fields
-  if (!data.name || !data.email || !data.message || !data.organization) {
+export async function submitContactForm(
+  data: ContactFormData
+): Promise<ContactSubmissionResult> {
+  if (!data.name || !data.organization || !data.email || !data.message) {
     return {
       success: false,
       message: "Please fill out all required fields.",
@@ -34,8 +31,8 @@ export async function submitContactForm(data: ContactFormData): Promise<ContactS
     };
   }
 
-  // Email format check
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   if (!emailRegex.test(data.email)) {
     return {
       success: false,
@@ -45,21 +42,39 @@ export async function submitContactForm(data: ContactFormData): Promise<ContactS
   }
 
   try {
-    // In production, this call connects to your backend API endpoint e.g., `/api/contact`
-    // Simulated realistic network latency for UI state verification:
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-    // Simulated successful response object:
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      return {
+        success: false,
+        message:
+          result.message ||
+          "We could not send your inquiry right now. Please try again.",
+        error: result.error,
+      };
+    }
+
     return {
       success: true,
-      message: "Thank you for contacting ORNIX. Our healthcare technology team will respond shortly.",
-      submissionId: `ORNIX-REQ-${Date.now().toString().slice(-6)}`,
+      message: result.message,
+      submissionId: result.submissionId,
     };
-  } catch (err: unknown) {
+  } catch (error) {
+    console.error("Contact submission error:", error);
+
     return {
       success: false,
-      message: "An unexpected error occurred while processing your request. Please try again.",
-      error: err instanceof Error ? err.message : "UNKNOWN_ERROR",
+      message:
+        "Unable to connect to the contact service. Please try again.",
+      error: "NETWORK_ERROR",
     };
   }
 }

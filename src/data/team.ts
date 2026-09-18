@@ -79,6 +79,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     avatarPlaceholder: "MT",
     linkedin: "",
     category: "research",
-    image: "/team/Meron.png",
+    image: "/team/Meron.jpg",
   },
 ];

@@ -265,37 +265,71 @@ export interface AllianceEntity {
   category: string;
   description: string;
   badge: string;
+  logo?: string;
 }
-
 export const STRATEGIC_ALLIANCE_ENTITIES: AllianceEntity[] = [
   {
-    name: "EAII (Ethiopian Artificial Intelligence Institute)",
-    category: "National AI Research & Ethics",
-    description: "Aligning research guidelines, ethical frameworks, and national AI benchmarks.",
-    badge: "Research & Governance",
+    name: "Ministry of Health",
+    category: "Government Institution",
+    description:
+      "Healthcare-focused institutional engagement supporting locally grounded digital and AI solutions.",
+    badge: "Health Sector",
+    logo: "/partners/MOH.png",
   },
   {
-    name: "Ministry of Innovation & Technology (MInT)",
-    category: "Digital Ethiopia 2025 Strategy",
-    description: "Fostering sovereign digital infrastructure and public sector digital transformation.",
-    badge: "National Strategy",
+    name: "Ministry of Education",
+    category: "Government Institution",
+    description:
+      "Exploring technology and AI opportunities that support education, knowledge, and institutional transformation.",
+    badge: "Education",
+    logo: "/partners/MOE.png",
   },
   {
-    name: "Local Enterprise Partners",
-    category: "Industry Leaders",
-    description: "Co-engineering tailored operational AI pipelines across commerce, telecom, and services.",
-    badge: "Enterprise Co-Innovation",
+    name: "Ministry of Agriculture",
+    category: "Government Institution",
+    description:
+      "Exploring AI applications for agricultural productivity, forecasting, computer vision, and food-system intelligence.",
+    badge: "AgriTech",
+    logo: "/partners/MOA.png",
   },
   {
-    name: "Financial Institutions",
-    category: "Commercial & Development Banks",
-    description: "Localized alternative credit assessment, fraud analytics, and sovereign compliance.",
-    badge: "Banking & FinTech",
+    name: "Ethiopian Public Health Institute",
+    category: "National Research Institution",
+    description:
+      "Connecting AI, data, and research capabilities with public-health intelligence and institutional needs.",
+    badge: "Research & Health",
+    logo: "/partners/EPHI.jpeg",
   },
   {
-    name: "Cloud Infrastructure Collaborators",
-    category: "Ethio Telecom Cloud & Datacenters",
-    description: "Ensuring 100% in-country data residency, sub-second latency, and air-gapped readiness.",
-    badge: "Sovereign Infrastructure",
+    name: "Ethiopian Artificial Intelligence Institute",
+    category: "National AI Research Institution",
+    description:
+      "Strategic collaboration supporting artificial intelligence research, innovation, and locally grounded AI capabilities in Ethiopia.",
+    badge: "Strategic AI Partner",
+    logo: "/partners/EAII.png",
+  },
+  {
+    name: "TATARIY LLC",
+    category: "International Technology Company",
+    description:
+      "Technology ecosystem collaboration connecting local innovation with international technical capabilities.",
+    badge: "International Technology",
+    logo: "/partners/Tatariy.jpeg",
+  },
+  {
+    name: "AMREF Health Africa",
+    category: "International Health Organization",
+    description:
+      "Health-sector ecosystem engagement focused on technology, data, and locally relevant digital solutions.",
+    badge: "Health & Development",
+    logo: "/partners/amref.png",
+  },
+  {
+    name: "Medafra IT Solutions",
+    category: "Technology & Digital Solutions",
+    description:
+      "Technology ecosystem collaboration supporting digital transformation and locally relevant software solutions.",
+    badge: "Technology",
+    logo: "/partners/medafra.jpeg",
   },
 ];

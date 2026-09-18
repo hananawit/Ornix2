@@ -3,24 +3,24 @@
 @tailwind utilities;
 
 :root {
-  /* Brighter navy palette - shifted from near-black to rich midnight blue */
+  /* Ornix Core Palette */
   --ornix-primary: #162040;
-  --ornix-primary-dark: #0E1830;
-  --ornix-primary-light: #1E2E58;
-  --ornix-accent: #F5B700;
-  --ornix-accent-hover: #E0A700;
-  --ornix-background: #111D3D;
+  --ornix-primary-dark: #0e1830;
+  --ornix-primary-light: #1e2e58;
+  --ornix-accent: #f5b700;
+  --ornix-accent-hover: #e0a700;
+  --ornix-background: #111d3d;
   --ornix-surface: #172242;
-  --ornix-text: #F8FAFC;
-  --ornix-muted: #9FB3CC;
-  --ornix-border: rgba(255, 255, 255, 0.10);
+  --ornix-text: #f8fafc;
+  --ornix-muted: #9fb3cc;
+  --ornix-border: rgba(255, 255, 255, 0.1);
 
-  /* Light section overrides */
-  --ornix-light-bg: #FFFFFF;
-  --ornix-light-surface: #F8FAFC;
-  --ornix-light-text: #0F172A;
-  --ornix-light-muted: #475569;
-  --ornix-light-border: rgba(15, 23, 42, 0.08);
+  /* Warm Off-White System */
+  --ornix-light-bg: #f3f0e8;
+  --ornix-light-surface: #faf8f3;
+  --ornix-light-text: #172033;
+  --ornix-light-muted: #596273;
+  --ornix-light-border: rgba(23, 32, 51, 0.12);
 }
 
 @layer base {
@@ -43,7 +43,99 @@
   }
 }
 
-/* Custom Utilities */
+/* =========================================================
+   ORNIX ARCHITECTURAL VISUAL SYSTEM
+   ========================================================= */
+@layer utilities {
+  /* Sharp architectural system */
+  .rounded-3xl,
+  .rounded-2xl,
+  .rounded-xl,
+  .rounded-lg,
+  .rounded-md,
+  .rounded-sm {
+    border-radius: 0 !important;
+      .ornix-light-section .glass-panel {
+    background: rgba(250, 248, 243, 0.82) !important;
+    border-color: rgba(23, 32, 51, 0.12) !important;
+    color: var(--ornix-light-text);
+  }
+
+  .ornix-light-section input,
+  .ornix-light-section select,
+  .ornix-light-section textarea {
+    background: rgba(255, 255, 255, 0.72) !important;
+    color: var(--ornix-light-text) !important;
+    border-color: rgba(23, 32, 51, 0.14) !important;
+  }
+
+  .ornix-light-section input::placeholder,
+  .ornix-light-section textarea::placeholder {
+    color: #7b8190 !important;
+  }
+
+  .ornix-light-section .text-ornix-yellow {
+    color: #b27f00 !important;
+  }
+  }
+
+  /* Warm off-white section */
+  .ornix-light-section {
+    background-color: var(--ornix-light-bg);
+    color: var(--ornix-light-text);
+  }
+
+  .ornix-light-surface {
+    background-color: var(--ornix-light-surface);
+    border-color: var(--ornix-light-border);
+    color: var(--ornix-light-text);
+  }
+    /* Warm off-white section with readable dark content */
+  .ornix-light-section {
+    background: var(--ornix-light-bg);
+    color: var(--ornix-light-text);
+    border-color: var(--ornix-light-border);
+  }
+
+  .ornix-light-section .text-white {
+    color: var(--ornix-light-text) !important;
+  }
+
+  .ornix-light-section .text-ornix-slate-200,
+  .ornix-light-section .text-ornix-slate-300,
+  .ornix-light-section .text-ornix-slate-400 {
+    color: var(--ornix-light-muted) !important;
+  }
+
+  .ornix-light-section .text-ornix-slate-500 {
+    color: #6b7280 !important;
+  }
+
+  .ornix-light-section .border-white\/10 {
+    border-color: var(--ornix-light-border) !important;
+  }
+
+  .ornix-light-section .border-white\/20 {
+    border-color: rgba(23, 32, 51, 0.16) !important;
+  }
+
+  .ornix-light-section .bg-ornix-navy-850 {
+    background: rgba(255, 255, 255, 0.55) !important;
+  }
+
+  .ornix-light-section .bg-ornix-navy-800 {
+    background: rgba(255, 255, 255, 0.65) !important;
+  }
+
+  .ornix-light-muted {
+    color: var(--ornix-light-muted);
+  }
+}
+
+/* =========================================================
+   GLASS SYSTEM
+   ========================================================= */
+
 .glass-panel {
   background: rgba(30, 46, 88, 0.65);
   backdrop-filter: blur(18px);
@@ -52,46 +144,68 @@
 }
 
 .glass-panel-light {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(250, 248, 243, 0.9);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  border: 1px solid var(--ornix-light-border);
 }
 
+/* =========================================================
+   BRAND EFFECTS
+   ========================================================= */
+
 .glow-yellow {
-  box-shadow: 0 0 35px -5px rgba(245, 183, 0, 0.30);
+  box-shadow: 0 0 35px -5px rgba(245, 183, 0, 0.3);
 }
 
 .text-gradient-accent {
-  background: linear-gradient(135deg, #FFFFFF 30%, #F5B700 100%);
+  background: linear-gradient(135deg, #ffffff 30%, #f5b700 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-navy {
-  background: linear-gradient(135deg, #162040 0%, #1E293B 100%);
+  background: linear-gradient(135deg, #162040 0%, #1e293b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Brighter subtle grid lines */
+/* =========================================================
+   GRID BACKGROUND
+   ========================================================= */
+
 .grid-background {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    );
   background-size: 40px 40px;
 }
 
-/* Custom scrollbar */
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: #0E1830;
+  background: #0e1830;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #2A3E72;
+  background: #2a3e72;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #F5B700;
+  background: #f5b700;
 }

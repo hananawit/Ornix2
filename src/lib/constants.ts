@@ -7,7 +7,9 @@ export const BRAND_TAGLINE = "Sovereign AI. Built for Ethiopia.";
 export const BRAND_DESCRIPTION =
   "Ornix AI Solutions PLC is Ethiopia's long-term AI co-innovation partner, delivering sovereign, locally grounded, full-spectrum artificial intelligence for enterprises and public institutions.";
 
-export const CONTACT_EMAIL = "partner@ornix.ai";
+export const CONTACT_PHONE = "+251912055505";
+
+export const CONTACT_EMAIL = "contact@Ornix.com.et";
 
 export const HEADQUARTERS = "Addis Ababa, Ethiopia";
 

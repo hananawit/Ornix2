@@ -27,49 +27,69 @@ export default function Home() {
       <TechnologySection />
       <CollaborationSection />
 
-      {/* Global Bottom CTA Section */}
-      <section className="py-24 bg-gradient-to-b from-ornix-navy-900 to-ornix-navy-950 text-white relative overflow-hidden border-t border-white/10 text-center">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-ornix-yellow/10 rounded-full blur-[180px] pointer-events-none" />
+  {/* =========================================================
+    GLOBAL BOTTOM CTA — HOMEPAGE
+========================================================= */}
+<section className="relative overflow-hidden bg-ornix-navy-900 text-white border-t border-white/10">
+  {/* Subtle structure */}
+  <div className="absolute inset-0 grid-background opacity-[0.025]" />
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ornix-yellow/20 border border-ornix-yellow/40 text-ornix-yellow text-xs font-semibold uppercase tracking-wider mb-6">
-            <Sparkles className="w-3.5 h-3.5" />
-            BUILD THE FUTURE OF HEALTHCARE
-          </div>
+  {/* Restrained ambient accent */}
+  <div className="absolute -top-40 right-[8%] w-[420px] h-[420px] rounded-full bg-ornix-yellow/[0.05] blur-[140px] pointer-events-none" />
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-heading text-white tracking-tight mb-6 leading-tight">
-            Let's Build the Future of <br className="hidden sm:block" />
-            Healthcare Together.
-          </h2>
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-[420px] md:min-h-[480px] flex items-center justify-center py-20 md:py-24">
 
-          <p className="text-base sm:text-lg text-ornix-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-            Partner with ORNIX to deploy clinical-grade artificial intelligence, harmonize health data streams, and build intelligent digital health systems.
-          </p>
-<div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ornix-yellow/20 border border-ornix-yellow/40 text-ornix-yellow text-xs font-semibold uppercase tracking-wider mb-6">
-  <Sparkles className="w-3.5 h-3.5" />
-  BUILD THE FUTURE WITH ORNIX
-</div>
+      <div className="w-full max-w-4xl mx-auto text-center">
 
-<h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-heading text-white tracking-tight mb-6 leading-tight">
-  Let&apos;s Build Intelligent Solutions{" "}
-  <br className="hidden sm:block" />
-  Together.
-</h2>
-
-<p className="text-base sm:text-lg text-ornix-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-  Transforming your organization with artificial intelligence does not start
-  with buying software—it starts with a conversation about your long-term
-  goals.
-</p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button href="/contact" variant="accent" size="lg" icon={<ArrowRight className="w-5 h-5" />}>
-Start a Conversation            </Button>
-            <Button href="/solutions" variant="glass" size="lg">
-          Explore Our Capabilities
-            </Button>
-          </div>
+        {/* Eyebrow */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-ornix-yellow text-xs font-semibold uppercase tracking-[0.18em] mb-7">
+          <span className="w-1.5 h-1.5 rounded-full bg-ornix-yellow" />
+          BUILD THE FUTURE WITH ORNIX
         </div>
-      </section>
+
+        {/* Heading */}
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tight leading-[0.98] text-white">
+          Let&apos;s build intelligent
+          <span className="block">
+            solutions together.
+          </span>
+        </h2>
+
+        {/* Accent */}
+        <div className="h-1 w-16 bg-ornix-yellow rounded-full mx-auto mt-8 mb-7" />
+
+        {/* Description */}
+        <p className="text-base sm:text-lg md:text-xl text-ornix-slate-300 leading-relaxed max-w-2xl mx-auto">
+          Transforming your organization with artificial intelligence
+          doesn&apos;t start with buying software — it starts with a
+          conversation about your long-term goals.
+        </p>
+
+        {/* Actions */}
+        <div className="flex flex-wrap items-center justify-center gap-4 mt-9">
+          <Button
+            href="/contact"
+            variant="accent"
+            size="lg"
+            icon={<ArrowRight className="w-5 h-5" />}
+          >
+            Start a Conversation
+          </Button>
+
+<Button
+  href="/solutions"
+  variant="outline"
+  size="lg"
+>
+  Explore Our Capabilities
+</Button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
     </>
   );
 }
