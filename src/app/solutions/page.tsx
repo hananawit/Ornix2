@@ -110,7 +110,7 @@ export default function SolutionsPage() {
                   <span className="w-1 h-1 rounded-full bg-ornix-slate-300" />
 
                   <span className="text-xs font-semibold uppercase tracking-[0.14em] text-ornix-slate-500">
-                    Language AI
+                    Natural Language Processing
                   </span>
 
                   <span className="w-1 h-1 rounded-full bg-ornix-slate-300" />
@@ -118,6 +118,21 @@ export default function SolutionsPage() {
                   <span className="text-xs font-semibold uppercase tracking-[0.14em] text-ornix-slate-500">
                     Computer Vision
                   </span>
+                  <span className="w-1 h-1 rounded-full bg-ornix-slate-300" />
+
+                  <span className="text-xs font-semibold uppercase tracking-[0.14em] text-ornix-slate-500">
+                    Robotics
+                  </span>
+                  <span className="w-1 h-1 rounded-full bg-ornix-slate-300" />
+
+                  <span className="text-xs font-semibold uppercase tracking-[0.14em] text-ornix-slate-500">
+                    Expert System
+                  </span>
+                  <span className="w-1 h-1 rounded-full bg-ornix-slate-300" />
+
+                  <span className="text-xs font-semibold uppercase tracking-[0.14em] text-ornix-slate-500">
+                    Cognitive Systems                  </span>
+
 
                   <span className="w-1 h-1 rounded-full bg-ornix-slate-300" />
 
@@ -259,7 +274,7 @@ export default function SolutionsPage() {
                           <div className="pt-6 mt-8 border-t border-ornix-navy-900/10">
                             <Button
                               href="/contact"
-variant="outline"                              size="sm"
+                              variant="outline" size="sm"
                               icon={<ArrowRight className="w-4 h-4" />}
                             >
                               Discuss This Capability
@@ -349,7 +364,7 @@ variant="outline"                              size="sm"
           <div className="flex flex-wrap items-center gap-4 mt-12">
             <Button
               href="/sectors"
-variant="outline"              size="lg"
+              variant="outline" size="lg"
               icon={<ArrowRight className="w-5 h-5" />}
             >
               Explore Our Sectors
@@ -398,7 +413,7 @@ variant="outline"              size="lg"
 
             <Button
               href="/sectors"
-variant="outline"
+              variant="outline"
               size="lg"
             >
               Explore Sectors
