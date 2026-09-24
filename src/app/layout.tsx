@@ -19,9 +19,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: `${BRAND_NAME} | AI & Healthcare Intelligence`,
+  title: `${BRAND_NAME} | Bridging AI & Ethiopia's Growth`,
   description:
-    "ORNIX develops intelligent healthcare technologies combining artificial intelligence, medical data, research, and digital innovation for a healthier future.",
+        "ORNIX bridges AI and Ethiopia's growth through sovereign, locally grounded intelligence across healthcare, finance, agriculture, manufacturing, public services, and beyond.",
   keywords: [
     "ORNIX",
     "Healthcare AI",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "ORNIX Inc." }],
   openGraph: {
-    title: `${BRAND_NAME} | AI & Healthcare Intelligence`,
+    title: `${BRAND_NAME}  Bridging AI & Ethiopia's Growth`,
     description: BRAND_TAGLINE,
     url: SITE_URL,
     siteName: BRAND_NAME,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${BRAND_NAME} | AI & Healthcare Intelligence`,
+    title: `${BRAND_NAME}  Bridging AI & Ethiopia's Growth`,
     description: BRAND_TAGLINE,
     images: ["/ornix-logo.png"],
   },
