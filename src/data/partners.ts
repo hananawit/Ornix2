@@ -24,7 +24,7 @@ export const PARTNERS: Partner[] = [
     id: "moe",
     name: "Ministry of Education",
     type: "Government Institution",
-    logo: "/partners/MOE.png",
+    logo: "/partners/moe.png",
   },
   {
     id: "moa",
