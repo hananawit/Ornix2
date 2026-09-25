@@ -134,11 +134,7 @@ export default function SolutionsPage() {
                     Cognitive Systems                  </span>
 
 
-                  <span className="w-1 h-1 rounded-full bg-ornix-slate-300" />
-
-                  <span className="text-xs font-semibold uppercase tracking-[0.14em] text-ornix-slate-500">
-                    Autonomous Systems
-                  </span>
+                  
                 </div>
               </div>
             </div>
